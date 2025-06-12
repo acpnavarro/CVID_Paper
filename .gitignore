@@ -1,0 +1,23 @@
+# R history and environment
+.Rhistory
+.RData
+.Rapp.history
+
+# RStudio settings
+.Rproj.user/
+.Rproj.user
+*.Rproj
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+
+# Personal folders (example: don’t track a folder with your raw data if you don’t want it public)
+# data/private_data/
+
+# Excel temporary files
+~$*
