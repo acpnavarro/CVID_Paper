@@ -53,7 +53,7 @@ p <- as.data.frame(gse) %>%
   theme_bw(base_size = 10) +
   scale_fill_continuous(low='red', high='blue', guide=guide_colorbar(reverse=TRUE)) + 
   ylab(NULL) +
-  ggtitle("GO: Non-Activated Memory CVID vs. HD")
+  ggtitle("GO: Resting Memory CVID vs. HD")
 
 ##Single GO plot -  Jak-STAT
 # Extract NES and adjusted p-value
@@ -61,7 +61,7 @@ nes_value <- round(gse@result[gse@result$ID == "GO:0007259", "NES"], 2)
 fdr_value <- signif(gse@result[gse@result$ID == "GO:0007259", "p.adjust"], 2)
 
 # Create a plot title with both values
-plot_title <- paste0("Receptor Signaling Pathway JAK-STAT\n(Non-Activated Memory CVID vs. HD)\nNES = ", 
+plot_title <- paste0("Receptor Signaling Pathway JAK-STAT\n(Resting Memory CVID vs. HD)\nNES = ", 
                      nes_value, ", FDR = ", fdr_value)
 
 # Generate the GSEA plot
@@ -89,7 +89,7 @@ nes_value <- round(react@result[react@result$ID == "R-HSA-168138", "NES"], 2)
 fdr_value <- signif(react@result[react@result$ID == "R-HSA-168138", "p.adjust"], 2)
 
 # Create a plot title with both values
-plot_title <- paste0("Toll-Like Receptor 9 Cascade (Non-Activated Memory CVID vs. HD)\nNES = ", 
+plot_title <- paste0("Toll-Like Receptor 9 Cascade (Resting Memory CVID vs. HD)\nNES = ", 
                      nes_value, ", FDR = ", fdr_value)
 
 # Generate the GSEA plot
@@ -102,7 +102,7 @@ nes_value <- round(react@result[react@result$ID == "R-HSA-168138", "NES"], 2)
 fdr_value <- signif(react@result[react@result$ID == "R-HSA-168138", "p.adjust"], 2)
 
 # Create a plot title with both values
-plot_title <- paste0("Toll-Like Receptor 9 Cascade\n(Non-Activated Memory CVID vs. HD)\nNES = ", 
+plot_title <- paste0("Toll-Like Receptor 9 Cascade\n(Resting Memory CVID vs. HD)\nNES = ", 
                      nes_value, ", FDR = ", fdr_value)
 
 # Generate the GSEA plot
@@ -128,7 +128,7 @@ p_hall <- as.data.frame(em4) %>%
   theme_bw(base_size = 10) +
   scale_fill_continuous(low = 'red', high = 'blue', guide = guide_colorbar(reverse = TRUE)) + 
   ylab(NULL) +
-  ggtitle("Hallmark Pathways: Non-Activated Memory CVID vs. HD")
+  ggtitle("Hallmark Pathways: Resting Memory CVID vs. HD")
 
 #Motifs
 library(msigdbr)
@@ -193,7 +193,7 @@ ggplot(data = df, aes(x = log2FoldChange, y = -log10(pvalue))) +
                                   face = "bold"))+
   theme(legend.title = element_text(color = "black", size = 15), legend.text = element_text(color = "black", size=10))+
   scale_x_continuous(breaks = seq(-10, 10, 5))+
-  labs(title="Non-Activated Memory B cells: CVID vs. HD")+
+  labs(title="Resting Memory B cells: CVID vs. HD")+
   theme(plot.title = element_text(size = 15))+
   geom_text_repel(aes(label = delabel), size = 4, max.overlaps = Inf)
 
