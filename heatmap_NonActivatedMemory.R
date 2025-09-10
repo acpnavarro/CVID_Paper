@@ -77,12 +77,12 @@ pheatmap(s_mat2,
          annotation_col = df_ann,
          annotation_colors = color_ann,
          legend_breaks = c(-2, 0, 2),
-         legend_labels = c("Low", "Medium", "High"),
+         legend_labels = c("-2", "0", "2"),
          angle_col = "45",
          show_colnames = FALSE,
          fontsize = 10,
          fontsize_col = 8,
          border_color = NA,
-         main = "Non-Activated Memory B Cells: CVID vs. HD")
+         main = "Resting Memory B Cells: CVID vs. HD")
 dev.off()
 
