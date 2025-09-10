@@ -35,6 +35,6 @@ pca2<-ggplot(pcaData, aes(x = PC1, y = PC2, color=interaction(Condition,CellType
   coord_fixed() +
   labs(shape="Status", colour="Condition/Cell Type")+
   scale_shape_manual(values = c(15,17,22,22,22,22))+
-  ggtitle("PCA VST data") 
+  ggtitle("") 
 
 ggsave(filename = "PCA_plot.png", plot = pca2, width = 8, height = 6, dpi = 300)
