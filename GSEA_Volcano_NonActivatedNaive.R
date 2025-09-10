@@ -59,7 +59,7 @@ p <- as.data.frame(gse) %>%
   theme_bw(base_size = 10) +
   scale_fill_continuous(low='red', high='blue', guide=guide_colorbar(reverse=TRUE)) + 
   ylab(NULL) +
-  ggtitle("GO: Non-Activated Naïve CVID vs. HD")
+  ggtitle("GO: Resting Naïve CVID vs. HD")
 
 ##Single GO plot -  Immune response
 # Extract NES and adjusted p-value
@@ -67,7 +67,7 @@ nes_value <- round(gse@result[gse@result$ID == "GO:0002757", "NES"], 2)
 fdr_value <- signif(gse@result[gse@result$ID == "GO:0002757", "p.adjust"], 2)
 
 # Create a plot title with both values
-plot_title <- paste0("Immune Response-Activating Signaling Pathway\n(Non-Activated Naïve CVID vs. HD)\nNES = ", 
+plot_title <- paste0("Immune Response-Activating Signaling Pathway\n(Resting Naïve CVID vs. HD)\nNES = ", 
                      nes_value, ", FDR = ", fdr_value)
 
 # Generate the GSEA plot
@@ -98,7 +98,7 @@ p <- as.data.frame(react) %>%
   theme_bw(base_size = 10) +
   scale_fill_continuous(low='red', high='blue', guide=guide_colorbar(reverse=TRUE)) + 
   ylab(NULL) +
-  ggtitle("Reactome: Non-Activated Naïve CVID vs. HD")
+  ggtitle("Reactome: Resting Naïve CVID vs. HD")
 
 ##hallmarks
 hall <- msigdbr(species = "Homo sapiens", category = "H") %>% 
@@ -118,7 +118,7 @@ p_hall <- as.data.frame(em4) %>%
   theme_bw(base_size = 10) +
   scale_fill_continuous(low = 'red', high = 'blue', guide = guide_colorbar(reverse = TRUE)) + 
   ylab(NULL) +
-  ggtitle("Hallmark Pathways: Non-Activated Naïve CVID vs. HD")
+  ggtitle("Hallmark Pathways: Resting Naïve CVID vs. HD")
 
 #Motifs
 library(msigdbr)
@@ -140,7 +140,7 @@ FDR_stat5 <- signif(stat5_data$p.adjust, 2)
 # Create the gseaplot2 with NES and FDR in the title
 stat5 <- gseaplot2(em2,
                    geneSetID = "STAT5A_04",
-                   title = paste0("STAT5 Motif (Non-Activated Naïve CVID vs. HD)\nNES = ", NES_stat5, ", FDR = ", FDR_stat5))
+                   title = paste0("STAT5 Motif (Resting Naïve CVID vs. HD)\nNES = ", NES_stat5, ", FDR = ", FDR_stat5))
 
 #####Volcano_DEGs
 ###volcano plot###
@@ -193,7 +193,7 @@ ggplot(data = df, aes(x = log2FoldChange, y = -log10(pvalue))) +
                                   face = "bold"))+
   theme(legend.title = element_text(color = "black", size = 15), legend.text = element_text(color = "black", size=10))+
   scale_x_continuous(breaks = seq(-10, 10, 5))+
-  labs(title="Non-Activated Naïve B cells: CVID vs. HD")+
+  labs(title="Resting Naïve B cells: CVID vs. HD")+
   theme(plot.title = element_text(size = 15))+
   geom_text_repel(aes(label = delabel), size = 4, max.overlaps = Inf)
 
