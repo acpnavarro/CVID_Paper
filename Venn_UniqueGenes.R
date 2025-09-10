@@ -35,12 +35,12 @@ venn_plot <- ggvenn(
 
 # Add title and annotation
 final_plot <- venn_plot + 
-  ggtitle("Differentially expressed genes: Naïve B Cells (Activated vs. Non-Activated)") +
+  ggtitle("Differentially expressed genes: Naïve B Cells (Activated vs. Resting)") +
   theme(
     plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
     plot.caption = element_text(hjust = 0, size = 10, face = "italic")
   ) +
-  labs(caption = "CVID_Naïve = CVID Naïve B cells (Activated vs. Non-Activated)\nHD_Naïve = Healthy Donor Naïve B cells (Activated vs. Non-Activated)")
+  labs(caption = "CVID_Naïve = CVID Naïve B cells (Activated vs. Resting)\nHD_Naïve = Healthy Donor Naïve B cells (Activated vs. Resting)")
 
 # Save the plot (change path if needed)
 ggsave("venn_naive_bcells.png", plot = final_plot, width = 8, height = 6, dpi = 300)
@@ -57,7 +57,7 @@ venn_plot <- ggvenn(
 
 # Add title and annotation
 final_plot <- venn_plot + 
-  ggtitle("Differentially expressed genes: Naïve B Cells (Activated vs. Non-Activated)") +
+  ggtitle("Differentially expressed genes: Naïve B Cells (Activated vs. Resting)") +
   theme(
     plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
     plot.caption = element_text(hjust = 0, size = 10, face = "italic")
@@ -83,12 +83,12 @@ venn_plot <- ggvenn(
 # Add a title and annotation using ggplot2
 
 final_plot2 <- venn_plot + 
-  ggtitle("Differentially expressed genes: Memory B Cells (Activated vs. Non-Activated)") +
+  ggtitle("Differentially expressed genes: Memory B Cells (Activated vs. Resting)") +
   theme(
     plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
     plot.caption = element_text(hjust = 0, size = 10, face = "italic")
   ) +
-  labs(caption = "CVID_MBC = CVID Bright Memory B cells (Activated vs. Non-Activated)\nHD_MBC = Healthy Donor Bright Memory B cells (Activated vs. Non-Activated)")
+  labs(caption = "CVID_MBC = CVID Bright Memory B cells (Activated vs. Resting)\nHD_MBC = Healthy Donor Bright Memory B cells (Activated vs. Resting)")
 # Save the plot (change path if needed)
 ggsave("venn_memory_bcells.png", plot = final_plot2, width = 9, height = 6, dpi = 300)
 
@@ -104,7 +104,7 @@ venn_plot <- ggvenn(
 # Add a title and annotation using ggplot2
 
 final_plot2 <- venn_plot + 
-  ggtitle("Differentially expressed genes: Memory B Cells (Activated vs. Non-Activated)") +
+  ggtitle("Differentially expressed genes: Memory B Cells (Activated vs. Resting)") +
   theme(
     plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
     plot.caption = element_text(hjust = 0, size = 10, face = "italic")
