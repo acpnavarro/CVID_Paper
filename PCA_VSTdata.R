@@ -1,8 +1,7 @@
 #####count_table#####
-countData<- read.xlsx("C:/Users/Anna/OneDrive/Documents/CVID_project/countData/countData.xlsx", rowNames=TRUE)
-
+countData <- read.xlsx("data/countData.xlsx", rowNames = TRUE)
 ####sample_table####
-sampleTable=read_excel("C:/Users/Anna/OneDrive/Documents/CVID_project/Excel_tables/table2_dds.xlsx")
+sampleTable <- read_excel("SampleTable/table2_dds.xlsx")
 sampleTable$Condition=as.factor(sampleTable$Condition)
 sampleTable$Sample=as.factor(sampleTable$Sample)
 sampleTable$CellType=as.factor(sampleTable$CellType)
