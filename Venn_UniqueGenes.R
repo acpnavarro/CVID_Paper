@@ -127,8 +127,8 @@ df_unique_CVID_MBC   <- data.frame(Gene = unique_CVID_MBC)
 df_unique_HD_MBC     <- data.frame(Gene = unique_HD_MBC)
 
 # Save each as a separate Excel file
-write.xlsx(df_unique_CVID_Naive, "unique_genes_CVID_Naive.xlsx", rowNames = FALSE)
-write.xlsx(df_unique_HD_Naive,   "unique_genes_HD_Naive.xlsx", rowNames = FALSE)
-write.xlsx(df_unique_CVID_MBC,   "unique_genes_CVID_MBC.xlsx", rowNames = FALSE)
-write.xlsx(df_unique_HD_MBC,     "unique_genes_HD_MBC.xlsx", rowNames = FALSE)
+write.xlsx(df_unique_CVID_Naive, "data/unique_genes_CVID_Naive.xlsx", rowNames = FALSE)
+write.xlsx(df_unique_HD_Naive,   "data/unique_genes_HD_Naive.xlsx",   rowNames = FALSE)
+write.xlsx(df_unique_CVID_MBC,   "data/unique_genes_CVID_MBC.xlsx",   rowNames = FALSE)
+write.xlsx(df_unique_HD_MBC,     "data/unique_genes_HD_MBC.xlsx",     rowNames = FALSE)
 
