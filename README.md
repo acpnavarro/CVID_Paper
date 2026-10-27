@@ -75,7 +75,7 @@ Differentially expressed genes were defined as Benjamini-Hochberg adjusted p < 0
 
 ## Software
 
-R (v4.3.2) with DESeq2 (v1.42.1), clusterProfiler (v4.10.1), ReactomePA (v1.46.0), msigdbr (v10.0.1), GSVA (v2.2.0), org.Hs.eg.db (v3.18.0), pheatmap (v1.0.12), ggplot2 (v3.5.1) and ggvenn (v0.1.10). The full list of packages is in `library.R`.
+R (v4.3.2) with DESeq2 (v1.42.1), clusterProfiler (v4.10.1), ReactomePA (v1.46.0), msigdbr (v10.0.1), org.Hs.eg.db (v3.18.0), pheatmap (v1.0.12), ggplot2 (v3.5.1) and ggvenn (v0.1.10). The full list of packages is in `library.R`.
 
 ## Input data
 
