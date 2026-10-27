@@ -28,8 +28,7 @@ top50_up <- IB %>%
 
 top100<- bind_rows(top50_up, top50_down)
 # VST data
-vst_dds <- readRDS("C:/Users/Anna/OneDrive/Documents/CVID_project/norm_dds.RDS")
-
+vst_dds <- readRDS("data/norm_dds.RDS")
 ##prepare the matrix
 # Extract gene names
 top_genes <- top100$row.names
