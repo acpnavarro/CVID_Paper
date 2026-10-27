@@ -9,7 +9,7 @@ library(ggplot2)
 library(patchwork)
 
 # Unique genes list
-unique_genes <- read_excel("C:/Users/Anna/OneDrive/Documents/CVID_project/Paper/Venn/unique_genes_HD_Naive.xlsx")
+unique_genes <- read_excel("data/unique_genes_HD_Naive.xlsx")
 colnames(unique_genes) <- "SYMBOL"
 
 #Convert unique gene list to ENTREZ IDs
