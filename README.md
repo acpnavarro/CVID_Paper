@@ -86,6 +86,15 @@ The scripts expect the following inputs:
 
 Raw sequencing data are publicly available under accession numbers **GSE307095** and **GSE227377**.
 
+## Supplementary result tables
+
+The `data/` folder also contains the result tables of the robustness analyses reported in the Supplementary Material:
+
+- `paired_sensitivity_results.xlsx`: paired sensitivity analysis (DESeq2, ~ Patient + Status) of the five patients with CVID with matched resting and activated samples
+- `deg_original_vs_batch.xlsx`: batch-robustness analysis, with original and batch-adjusted adjusted p-values for the DEGs of the four disease contrasts (CVID vs. HD)
+
+These tables were generated with `DESeq_PairedSensitivity_BatchRobustness.R`. When the script is run again, it writes its results as `.csv` files to the `sensitivity_robustness/` folder.
+
 ## Contact
 
 Anna Pousas Navarro, MD, MSc
