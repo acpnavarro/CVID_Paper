@@ -49,6 +49,7 @@ Reads were processed before the analyses in this repository as follows:
 | `library.R` | Installs and loads all required packages | |
 | `PCA_VSTdata.R` | Variance-stabilising transformation and PCA of all samples | 2A |
 | `DESeq_ActxNonAct.R` | DESeq2: activated vs. resting cells within each group (CVID and HD; naïve and CD27bright MBCs) | 2B, 2E |
+| `DESeq_CVIDxHD.R` | DESeq2: CVID vs. HD within each cell type and activation state; generates the input tables for the GSEA and heatmap scripts | 3, 4 |
 | `Venn_UniqueGenes.R` | Overlap of activation-induced DEGs between CVID and HD; extraction of group-specific genes | 2B, 2E |
 | `ORA_HD_Naive.R`, `ORA_CVID_Naive.R` | Over-representation analysis (GO, KEGG, Reactome, Hallmark) of group-specific DEGs, naïve B cells | 2C, 2D |
 | `ORA_HD_Memory.R`, `ORA_CVID_Memory.R` | Over-representation analysis of group-specific DEGs, CD27bright MBCs | 2F, 2G |
