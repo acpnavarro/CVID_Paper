@@ -91,4 +91,4 @@ Corresponding author of the study: Ola Grimsholm, Medical University of Vienna.
 
 ## License
 
-["All rights reserved".]
+All rights reserved.
