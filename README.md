@@ -56,7 +56,7 @@ Reads were processed before the analyses in this repository as follows:
 | `heatmap_RestingMemory.R`, `heatmap_ActivatedMemory.R` | As above, CD27bright MBCs | 4A, 4B |
 | `GSEA_Volcano_RestingNaive.R`, `GSEA_Volcano_ActivatedNaive.R` | Volcano plots and GSEA (GO, Reactome, Hallmark, C3 motifs including STAT5), CVID vs. HD, naïve B cells | 3C–3H |
 | `GSEA_Volcano_RestingMemory.R`, `GSEA_Volcano_ActivatedMemory.R` | As above, CD27bright MBCs (including TLR9 cascade and STAT3 motif) | 4C–4H |
-| DESeq_PairedSensitivity_BatchRobustness.R | Paired sensitivity analysis (~ Patient + Status, 5 CVID patients) and batch-robustness analysis (~ Batch + Condition) of the primary DESeq2 results | Supplementary |
+| `DESeq_PairedSensitivity_BatchRobustness.R` | Paired sensitivity analysis (~ Patient + Status, 5 CVID patients) and batch-robustness analysis (~ Batch + Condition) of the primary DESeq2 results | Supplementary |
 
 Differentially expressed genes were defined as Benjamini-Hochberg adjusted p < 0.05, without a log₂ fold-change threshold. Volcano plots highlight genes with |log₂FC| > 1.5.
 
@@ -70,6 +70,7 @@ Differentially expressed genes were defined as Benjamini-Hochberg adjusted p < 0
 6. `ORA_*.R`
 7. `GSEA_Volcano_*.R`
 8. `heatmap_*.R`
+9. `DESeq_PairedSensitivity_BatchRobustness.R`
 
 ## Software
 
