@@ -14,6 +14,7 @@ dds <- DESeqDataSetFromMatrix(countData = countData,
                               design = ~ Group)
 ##transformation of count data
 normal_dds<- vst(dds)
+saveRDS(normal_dds, "data/norm_dds.RDS")
 
 #ggplot
 pcaData <- plotPCA(normal_dds, intgroup = c("Sample", "Condition", "Status", "CellType"), returnData = TRUE)
