@@ -22,6 +22,7 @@ BiocManager::install("fgsea")
 BiocManager::install("enrichTF")
 BiocManager::install("msigdbr")
 install.packages("ggpubr")
+install.packages(c("ggvenn", "patchwork", "gridExtra"))
 
 ###############################################################################
 library(msigdbr)
