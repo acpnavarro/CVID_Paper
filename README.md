@@ -64,10 +64,11 @@ Differentially expressed genes were defined as Benjamini-Hochberg adjusted p < 0
 1. `library.R`
 2. `PCA_VSTdata.R`
 3. `DESeq_ActxNonAct.R`
-4. `Venn_UniqueGenes.R`
-5. `ORA_*.R`
-6. `GSEA_Volcano_*.R`
-7. `heatmap_*.R`
+4. `DESeq_CVIDxHD.R`
+5. `Venn_UniqueGenes.R`
+6. `ORA_*.R`
+7. `GSEA_Volcano_*.R`
+8. `heatmap_*.R`
 
 ## Software
 
