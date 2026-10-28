@@ -2,7 +2,7 @@
 
 Analysis code for the RNA-seq study:
 
-> **Pousas Navarro, A.\***, Pour Akaber, S.\*, Waldenström, J.\*, Friman, V.\*, Zanchetta, A., Basílio, J., Barresi, S., Hambrecht, B., Tartaglia, M., Lundqvist, A., Malmström, N., Karlsson, J., Tilevik, A., Bemark, M., Bohle, B., & Grimsholm, O. (2026). Impaired activation of STAT5 pathways in the naïve B cell compartment in patients with common variable immunodeficiency harbouring CD27bright memory B cells. *Frontiers in Immunology*. Accepted for publication. 
+> Pousas Navarro, A.*, Pour Akaber, S.*, Friman, V.*, Waldenström, J.*, Zanchetta, A., Basílio, J., Barresi, S., Hambrecht, B., ... & Grimsholm, O. (2026). Impaired activation of STAT5 pathways in the naïve B cell compartment in patients with common variable immunodeficiency harbouring CD27bright memory B cells. Frontiers in Immunology, 17, 1897063. https://doi.org/10.3389/fimmu.2026.1897063
 >
 > \*These authors contributed equally to this work.
 
