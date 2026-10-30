@@ -97,7 +97,7 @@ These tables were generated with `DESeq_PairedSensitivity_BatchRobustness.R`. Wh
 
 ## Contact
 
-Anna Pousas Navarro, MD, MSc
+Anna Carolina Pousas Navarro, MD, MSc
 [LinkedIn](https://www.linkedin.com/in/anna-carolina-pousas-navarro-73949339/)
 
 Corresponding author of the study: Ola Grimsholm, Medical University of Vienna.
