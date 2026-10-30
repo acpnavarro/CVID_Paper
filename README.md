@@ -104,4 +104,4 @@ Corresponding author of the study: Ola Grimsholm, Medical University of Vienna.
 
 ## License
 
-All rights reserved.
+The code in this repository is licensed under the [MIT License](LICENSE).
